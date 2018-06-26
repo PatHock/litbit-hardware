@@ -175,12 +175,14 @@
 <text x="42.418" y="37.846" size="0.8128" layer="21" rot="R180">SDA</text>
 <circle x="43.18" y="37.338" radius="0.254" width="0.2032" layer="21"/>
 <circle x="19.304" y="17.78" radius="0.254" width="0.2032" layer="21"/>
-<dimension x1="0.254" y1="38.1" x2="48.768" y2="38.1" x3="24.511" y3="41.656" textsize="1.778" layer="20" unit="inch"/>
 <wire x1="48.768" y1="0" x2="48.768" y2="38.1" width="0" layer="20"/>
 <wire x1="48.768" y1="38.1" x2="0" y2="38.1" width="0" layer="20"/>
 <wire x1="0" y1="38.1" x2="0" y2="10.414" width="0" layer="20"/>
 <wire x1="0" y1="10.414" x2="10.668" y2="0" width="0" layer="20"/>
 <wire x1="10.668" y1="0" x2="48.768" y2="0" width="0" layer="20"/>
+<text x="4.318" y="15.748" size="1.778" layer="21" rot="R90">Patrick Hock</text>
+<text x="6.35" y="15.748" size="1.778" layer="21" rot="R90">Litbit 2018</text>
+<text x="8.128" y="15.748" size="1.27" layer="21" rot="R90">REV -1</text>
 </plain>
 <libraries>
 <library name="SCADA_CUSTOM_LIBRARY">
@@ -2263,7 +2265,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="31.115" y="14.986" size="0.6096" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="32.385" y="14.986" size="0.6096" layer="27" rot="R90" align="top-center"/>
 </element>
-<element name="U$8" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="8.636" y="5.588"/>
+<element name="U$8" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="8.636" y="5.842"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2324,12 +2326,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <polygon width="0.254" layer="16" rank="6">
 <vertex x="48.768" y="38.1"/>
 <vertex x="0" y="38.1"/>
-<vertex x="0" y="0"/>
+<vertex x="0" y="37.084"/>
+<vertex x="6.604" y="30.48"/>
+<vertex x="9.144" y="27.94"/>
+<vertex x="9.144" y="1.524"/>
+<vertex x="10.668" y="0"/>
 <vertex x="48.768" y="0"/>
 </polygon>
 <contactref element="R2" pad="1"/>
 <polygon width="0.254" layer="1" rank="6">
-<vertex x="0" y="0"/>
+<vertex x="10.668" y="0"/>
+<vertex x="9.144" y="1.524"/>
+<vertex x="9.144" y="27.94"/>
+<vertex x="0" y="37.084"/>
 <vertex x="0" y="38.1"/>
 <vertex x="48.768" y="38.1"/>
 <vertex x="48.768" y="0"/>
@@ -2470,6 +2479,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="16.51" y1="14.771" x2="16.51" y2="14.224" width="0.2032" layer="1"/>
 <wire x1="16.51" y1="14.224" x2="17.018" y2="13.716" width="0.2032" layer="1"/>
 <via x="17.018" y="13.716" extent="1-16" drill="0.254"/>
+<wire x1="9.779" y1="9.056" x2="7.874" y2="9.056" width="0.508" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="FB1" pad="1"/>
@@ -3587,6 +3597,18 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="20.574" y1="6.858" x2="19.6115" y2="7.8205" width="0.2032" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,d539d7f873987159"/>
+<approved hash="19,1,10d913ba73da70b9"/>
+<approved hash="19,1,deb5588f46dbd114"/>
+<approved hash="19,1,d4d9d7b8f3d8f0b9"/>
+<approved hash="19,1,3c633a27da47dc03"/>
+<approved hash="19,1,1065162276427005"/>
+<approved hash="19,1,113913faf39af159"/>
+<approved hash="19,1,d465d220f640f005"/>
+<approved hash="19,1,3d3f3fff5f9f5d5f"/>
+<approved hash="19,1,3cdf3fbfdfdfdcbf"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
